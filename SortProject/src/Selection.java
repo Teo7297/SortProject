@@ -1,11 +1,11 @@
 
+/**classe per l'implementazione del Selection Sort**/
+
 public class Selection {
 	private static int min;
 	
-	
-	
 	public static void main(String args[]) {
-		int[] vector = {7, 8 ,3,2,5,6,9,1,4};
+		int[] vector = {7, 8 ,3,2,5,6,9,1,4};			//eliminare il main ed implementare generatore random per l'array
 		vector = sort(vector);
 		
 		for(int h = 0; h < vector.length; h++)
