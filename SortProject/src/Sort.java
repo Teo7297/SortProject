@@ -5,12 +5,8 @@ import java.util.Random;
 
 import javax.swing.*;
 
+public class Sort {
 
-
-public class Sort 
-{        
-	
-	
 	public static void main(String args[])
 	{
 		int [] values;
@@ -38,13 +34,19 @@ public class Sort
 			
 			values[i] = n;
 			
-			System.out.println(n); // ho dei valori random ora dovrei
+			//System.out.println(n); // ho dei valori random ora dovrei
 			                       // tecnicmante fare le strisce
 		}
+		values = Selection.sort(values);
+		for(int s = 0; s< values.length; s++)
+			System.out.println(values[s]);
+		
+		
 		
 		
 		
 	}
 
-}
+	
 
+}
