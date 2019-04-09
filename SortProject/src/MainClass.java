@@ -3,17 +3,16 @@ import java.io.IOException;
 public class MainClass {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		Setup setup = new Setup();
-		int [] array = setup.makeArray();
+		int[] array = setup.makeArray();
 		String command = setup.setCommand();
 		array = new Launcher().sort(array, command);
-		
-		for(int i = 0; i < array.length; i ++) {
+
+		for (int i = 0; i < array.length; i++) { // stampa per testare il programma, da eliminare in futuro
 			System.out.println(array[i]);
 		}
-		
-		
+
 	}
 
 }

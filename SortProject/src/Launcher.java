@@ -10,13 +10,14 @@ public class Launcher {
 	BufferedReader br;
 	String algorithm;
 	int[] array;
-	
-	public Launcher(){
+
+	public Launcher() {
 	}
-																					//aggiungere 1 case per ogni algoritmo
+
+	// aggiungere 1 case per ogni algoritmo
 	public int[] sort(int[] array, String alg) {
-		switch(alg) {
-		case "selection": 
+		switch (alg) {
+		case "selection":
 			array = Selection.sort(array);
 			break;
 		}
