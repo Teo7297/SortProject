@@ -3,20 +3,15 @@
 
 import java.awt.*;
 import javax.swing.*;
+import java.*;
 
-public class Gui {
+public class Gui extends JFrame {
 
-	public static void main(String args[]) {
-		int[] values;
-
-		JFrame j = new JFrame("gui");
-
-		Container c = j.getContentPane();
-
-		c.setBackground(Color.black);
-
-		j.setSize(600, 500);
-		j.setVisible(true);
+	public static void main(String args[])
+	{
+		new Gui();
+		
+	}
 
 		/*
 		 * int numero = 500;
@@ -37,6 +32,35 @@ public class Gui {
 		 * System.out.println(values[s]);
 		 */
 
-	}
+	public Gui()
+	{
+		setTitle("prova");
+		int[] values;
 
+		JFrame j = new JFrame("gui");
+
+		Container c = j.getContentPane();
+		
+		JPanel panel = new JPanel();
+
+		c.setBackground(Color.white);
+
+		j.setSize(600, 500);
+		j.setVisible(true);
+	}
 }
+	
+	/*public void paintComponent(Graphics g) 
+	{
+		g.setColor(Color.black);
+		g.drawLine(50, 0, 1, 100);
+		
+	}
+	}*/
+  public void Line() 
+  {
+	Line l = new Line();
+  }
+   
+   
+
