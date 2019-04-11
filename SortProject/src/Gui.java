@@ -2,14 +2,33 @@
 /**classe per l'implementazione della gui**/
 
 import java.awt.*;
+
+import javax.sound.sampled.Line;
 import javax.swing.*;
-import java.*;
+import javafx.*;
 
 public class Gui extends JFrame {
 
 	public static void main(String args[])
 	{
-		new Gui();
+		
+		    JFrame j = new JFrame("gui");
+		
+			visual n= new visual ();
+			
+			j.add(n);
+			int[] values;
+
+			
+			Container c = j.getContentPane();
+			
+			JPanel panel = new JPanel();
+
+			c.setBackground(Color.white);
+
+			j.setSize(600, 500);
+			j.setVisible(true);
+		
 		
 	}
 
@@ -32,35 +51,9 @@ public class Gui extends JFrame {
 		 * System.out.println(values[s]);
 		 */
 
-	public Gui()
-	{
-		setTitle("prova");
-		int[] values;
-
-		JFrame j = new JFrame("gui");
-
-		Container c = j.getContentPane();
-		
-		JPanel panel = new JPanel();
-
-		c.setBackground(Color.white);
-
-		j.setSize(600, 500);
-		j.setVisible(true);
-	}
-}
 	
-	/*public void paintComponent(Graphics g) 
-	{
-		g.setColor(Color.black);
-		g.drawLine(50, 0, 1, 100);
-		
-	}
-	}*/
-  public void Line() 
-  {
-	Line l = new Line();
-  }
-   
-   
+}
+
+
+    
 
